@@ -1,9 +1,10 @@
 import mongoose from 'mongoose';
-import { env } from './dotenv.js';
 
-mongoose.connect(env.MONGO_URL)
+const connectionString = process.env.MONGO_URI || env.MONGO_URL;
+
+mongoose.connect(connectionString)
     .then(() => {
-        console.log('DB Connected');
+        console.log(' DB Connected');
     })
     .catch((err) => {
         console.log('DB Connection Error:', err);
