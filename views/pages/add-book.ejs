@@ -1,0 +1,52 @@
+<%- include('../partials/header') %>
+
+<div class="container my-5 pt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            
+            <div class="text-center mb-4">
+                <h3 class="fw-bold main-title">Add New Book</h3>
+                <p class="text-muted small">Enter the details to expand the Velvet Spine Archive.</p>
+            </div>
+
+            <div class="p-4 shadow-sm border bg-white rounded-4">
+                <form action="/add-book" method="POST" enctype="multipart/form-data">
+                    
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold text-secondary">TITLE</label>
+                        <input type="text" name="title" class="form-control" placeholder="The Great Gatsby" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label small fw-bold text-secondary">AUTHOR</label>
+                        <input type="text" name="author" class="form-control" placeholder="F. Scott Fitzgerald" required>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <label class="form-label small fw-bold text-secondary">PRICE (₹)</label>
+                            <input type="number" name="price" class="form-control" placeholder="0.00" step="0.01" required>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label small fw-bold text-secondary">COVER IMAGE</label>
+                            <input type="file" name="bookImage" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <hr class="my-4 text-muted">
+
+                    <button type="submit" class="btn btn-dark btn-add w-100 py-2 fw-bold">
+                        Save to Archive
+                    </button>
+                    
+                    <div class="text-center mt-3">
+                        <a href="/view-book" class="text-decoration-none small text-muted">Cancel and go back</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>

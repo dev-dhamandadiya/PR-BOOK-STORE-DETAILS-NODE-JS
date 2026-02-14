@@ -1,0 +1,29 @@
+{
+  "name": "pr-book-store-details-node-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "dotenv": "^17.3.1",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "mongoose": "^9.2.0",
+    "multer": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-dhamandadiya/PR-BOOK-STORE-DETAILS-NODE-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-dhamandadiya/PR-BOOK-STORE-DETAILS-NODE-JS/issues"
+  },
+  "homepage": "https://github.com/dev-dhamandadiya/PR-BOOK-STORE-DETAILS-NODE-JS#readme"
+}
